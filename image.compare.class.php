@@ -93,7 +93,7 @@ class compareImages
 		$i1 = $this->createImage($a);
 		$i2 = $this->createImage($b);
 		
-		if(!$i1 || !$i2){return 'kacsa';}
+		if(!$i1 || !$i2){return false;}
 		
 		$i1 = $this->resizeImage($i1,$a);
 		$i2 = $this->resizeImage($i2,$b);
