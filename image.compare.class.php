@@ -107,7 +107,7 @@ class compareImages
 	
     public function compare($a,$b)
     {
-		/* main function. returns the hammering distance of two images' bit value */
+		/* main function. returns the hamming distance of two images' bit value */
 		$i1 = $this -> createImage($a);
 		$i2 = $this -> createImage($b);
 		
@@ -125,19 +125,19 @@ class compareImages
 		$bits1 = $this -> bits($colorMean1);
 		$bits2 = $this -> bits($colorMean2);
 		
-		$hammeringDistance = 0;
+		$hammingDistance = 0;
 		
 		for($a = 0; $a < 64; $a++)
 		{
 		
 			if($bits1[$a] != $bits2[$a])
 			{
-				$hammeringDistance++;
+				$hammingDistance++;
 			}
 			
 		}
 		  
-		return $hammeringDistance;
+		return $hammingDistance;
     }
 }
 ?>
